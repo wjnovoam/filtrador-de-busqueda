@@ -156,3 +156,7 @@ section .contenedor-section .titulo {
 .filter {
 	display: none;
 }
+
+.mensaje {
+	display: none;
+}
