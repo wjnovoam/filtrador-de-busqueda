@@ -1,0 +1,158 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fff;
+	font-family: Helvetica, sans-serif;
+}
+
+.contenedor {
+	width: 100%;
+	text-align: center;
+}
+
+header .contenedor-header {
+	position: fixed;
+	width: 100%;
+	background-color: #405de6;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.logo {
+	margin: 12px;
+}
+
+.logo img {
+	width: 80%;
+	vertical-align: top;
+}
+
+.buscador {
+	margin: auto 40px;
+	width: 30%;
+}
+
+.buscador input[type='search'] {
+	padding: 8px 15px;
+	width: 90%;
+	border-radius: 10px;
+	border: none;
+	font-size: 25px;
+	outline: none;
+}
+
+.buscador input[type='search']:focus {
+	border: 3px solid #833ab4;
+}
+
+section .contenedor-section {
+	background-color: #fff;
+	padding-top: 80px;
+}
+
+section .contenedor-section .titulo {
+	padding: 20px;
+	font-size: 40px;
+	color: #833ab4;
+}
+
+.productos {
+	width: 80%;
+	margin: 12px auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.producto {
+	/* padding: 40px 0; */
+	width: 23%;
+	box-shadow: 2px 2px 8px #999999;
+	margin-bottom: 40px;
+	border-radius: 8px;
+}
+
+.producto:hover {
+	transform: scale(1.05);
+}
+
+.producto .thumb img {
+	width: 100%;
+	vertical-align: top;
+	border-radius: 8px 8px 0 0;
+}
+
+.producto .contenido-producto .titulo {
+	font-size: 20px;
+	color: #405de6;
+}
+
+.producto .contenido-producto .descripcion {
+	padding-bottom: 15px;
+}
+
+.descripcion p {
+	font-size: 18px;
+}
+
+@media (max-width: 1000px) {
+	.producto {
+		width: 30%;
+		box-shadow: 2px 2px 8px #999999;
+		margin-bottom: 40px;
+		border-radius: 8px;
+	}
+
+	.producto .contenido-producto .titulo {
+		font-size: 15px;
+	}
+
+	.descripcion p {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 600px) {
+	.producto {
+		width: 46%;
+		box-shadow: 2px 2px 8px #999999;
+		margin-bottom: 40px;
+		border-radius: 8px;
+	}
+
+	.producto .contenido-producto .titulo {
+		font-size: 15px;
+		margin: 0;
+	}
+
+	.producto .contenido-producto .descripcion {
+		font-size: 12px;
+	}
+
+	.buscador {
+		width: 60%;
+	}
+}
+
+@media (max-width: 400px) {
+	.producto {
+		width: 100%;
+		box-shadow: 2px 2px 8px #999999;
+		margin-bottom: 40px;
+		border-radius: 8px;
+	}
+
+	.buscador {
+		width: 60%;
+	}
+}
+
+.filter {
+	display: none;
+}
